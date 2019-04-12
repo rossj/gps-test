@@ -1,0 +1,16 @@
+{
+  "name": "gps-test",
+  "version": "1.0.0",
+  "description": "Tests various Google Pub/Sub subscriber / publisher scenarios",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ross Johnson <ross@goldfynch.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/pubsub": "^0.28.1",
+    "asciichart": "^1.5.7",
+    "typescript": "^3.3.4000"
+  }
+}

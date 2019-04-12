@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "allowJs": false,
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "strictNullChecks": true,
+        "sourceMap": true,
+        "outDir": "./dist/",
+        "removeComments": true,
+        "rootDir": "./",
+        "lib": [
+            "es6",
+            "esnext.asynciterable"
+        ],
+        "resolveJsonModule": true,
+        "baseUrl": "."
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "plugins": [
+        {
+            "name": "typescript-tslint-plugin",
+            "alwaysShowRuleFailuresAsWarnings": false,
+            "ignoreDefinitionFiles": true,
+            "configFile": "../tslint.json",
+            "suppressWhileTypeErrorsPresent": false,
+            "mockTypeScriptVersion": false
+        }
+    ]
+}
