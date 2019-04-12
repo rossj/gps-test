@@ -12,40 +12,40 @@ After about 35 minutes of subscribing, near the end of the 10000 messages, the s
 - Subscription: `gps-test-sub-d8f673dbfa`
 
 ```JSON
-    {
-        "name": "10000, 0.1 fast ack",
-        "publisherClientOptions": {
-            "grpc.http2.lookahead_bytes": 4096,
-            "grpc.http2.bdp_probe": 0
+{
+    "name": "10000, 0.1 fast ack",
+    "publisherClientOptions": {
+        "grpc.http2.lookahead_bytes": 4096,
+        "grpc.http2.bdp_probe": 0
+    },
+    "publisherTopicOptions": {
+        "batching": {
+            "maxMessages": 1000,
+            "maxMilliseconds": 100
+        }
+    },
+    "subscriberSubscriptionOptions": {
+        "ackDeadline": 30,
+        "flowControl": {
+            "maxMessages": 1,
+            "allowExcessMessages": false
         },
-        "publisherTopicOptions": {
-            "batching": {
-                "maxMessages": 1000,
-                "maxMilliseconds": 100
-            }
-        },
-        "subscriberSubscriptionOptions": {
-            "ackDeadline": 30,
-            "flowControl": {
-                "maxMessages": 1,
-                "allowExcessMessages": false
-            },
-            "streamingOptions": {
-                "maxStreams": 1
-            }
-        },
-        "subscriptionAckDeadlineSeconds": 10,
-        "processingTimeMilliseconds": 100,
-        "subscriberCount": 1,
-        "subscriberStartDelayMinutes": 5,
-        "messageBytes": 50,
-        "publisherCount": 1,
-        "initialMessageCount": 10000,
-        "messagesPerPublishBatch": 0,
-        "batchesPerMinute": 0.5,
-        "publishDurationMinutes": 0,
-        "testDurationMinutes": 60
-    }
+        "streamingOptions": {
+            "maxStreams": 1
+        }
+    },
+    "subscriptionAckDeadlineSeconds": 10,
+    "processingTimeMilliseconds": 100,
+    "subscriberCount": 1,
+    "subscriberStartDelayMinutes": 5,
+    "messageBytes": 50,
+    "publisherCount": 1,
+    "initialMessageCount": 10000,
+    "messagesPerPublishBatch": 0,
+    "batchesPerMinute": 0.5,
+    "publishDurationMinutes": 0,
+    "testDurationMinutes": 60
+}
 ```
 
 ## Graphs
