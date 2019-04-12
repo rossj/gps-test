@@ -8,6 +8,9 @@ After about 35 minutes of subscribing, near the end of the 10000 messages, the s
 
 ## Scenario
 
+- Topic: `gps-test-topic-e4e4c72c50`
+- Subscription: `gps-test-sub-d8f673dbfa`
+
 ```JSON
     {
         "name": "10000, 0.1 fast ack",
@@ -47,16 +50,13 @@ After about 35 minutes of subscribing, near the end of the 10000 messages, the s
 
 ## Graphs
 
-- Topic: `gps-test-topic-e4e4c72c50`
-- Subscription: `gps-test-sub-d8f673dbfa`
+![Acknowledge Requests](Acknowledge_Requests.png)
 
-![Acknowledge Requests](Acknowledge Requests.png)
+![StreamingPull Operations](StreamingPull_Operations.png)
 
-![StreamingPull Operations](StreamingPull Operations.png)
+![Undelivered Messages](Undelivered_Messages.png)
 
-![Undelivered Messages](Undelivered Messages.png)
-
-![Oldest Unacknowledged Message](Oldest Unacknowledged Message.png)
+![Oldest Unacknowledged Message](Oldest_Unacknowledged_Message.png)
 
 ## Output
 ```

@@ -8,6 +8,9 @@ After about 38 minutes of subscribing, almost at the same time when the last of 
 
 ## Scenario
 
+- Topic: `gps-test-topic-1705f0d058`
+- Subscription: `gps-test-sub-d3758d0d4e`
+
 ```JSON
 {
     "name": "2x1000 publish batch",
@@ -47,16 +50,13 @@ After about 38 minutes of subscribing, almost at the same time when the last of 
 
 ## Graphs
 
-- Topic: `gps-test-topic-1705f0d058`
-- Subscription: `gps-test-sub-d3758d0d4e`
+![Acknowledge Requests](Acknowledge_Requests.png)
 
-![Acknowledge Requests](Acknowledge Requests.png)
+![StreamingPull Operations](StreamingPull_Operations.png)
 
-![StreamingPull Operations](StreamingPull Operations.png)
+![Undelivered Messages](Undelivered_Messages.png)
 
-![Undelivered Messages](Undelivered Messages.png)
-
-![Oldest Unacknowledged Message](Oldest Unacknowledged Message.png)
+![Oldest Unacknowledged Message](Oldest_Unacknowledged_Message.png)
 
 ## Output
 

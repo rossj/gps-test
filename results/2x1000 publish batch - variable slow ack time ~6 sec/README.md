@@ -8,6 +8,9 @@ The subscriber received an initial batch of 316 messages, and then later another
 
 ## Scenario
 
+- Topic: `gps-test-topic-b3966b7f1b`
+- Subscription: `gps-test-sub-bc94d76a90`
+
 ```JSON
 {
     "name": "variable ack time",
@@ -47,16 +50,13 @@ The subscriber received an initial batch of 316 messages, and then later another
 
 ## Graphs
 
-- Topic: `gps-test-topic-b3966b7f1b`
-- Subscription: `gps-test-sub-bc94d76a90`
+![Acknowledge Requests](Acknowledge_Requests.png)
 
-![Acknowledge Requests](Acknowledge Requests.png)
+![StreamingPull Operations](StreamingPull_Operations.png)
 
-![StreamingPull Operations](StreamingPull Operations.png)
+![Undelivered Messages](Undelivered_Messages.png)
 
-![Undelivered Messages](Undelivered Messages.png)
-
-![Oldest Unacknowledged Message](Oldest Unacknowledged Message.png)
+![Oldest Unacknowledged Message](Oldest_Unacknowledged_Message.png)
 
 ## Output
 
