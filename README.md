@@ -1,4 +1,4 @@
-# gcp-test
+# gps-test
 
 This project runs test schenarios against Google Cloud Pub/Sub, in an effort to isolate and reproduce issues relating to duplicate messages and message ack requests that fail.
 
